@@ -12,6 +12,13 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
+
+      - run: 
+          name: "Configuring git"
+          command: |
+            git config --global user.email "ln.munhoz@gmail.com"
+            git config --global user.name "lnmunhoz"
+            
       - run: 
           name: "Install Lerna"
           command: |

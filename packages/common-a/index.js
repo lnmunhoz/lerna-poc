@@ -1,1 +1,1 @@
-module.exports = () => console.log('Hello from common-a!')
+module.exports = () => console.log('Hello World from common-a!')

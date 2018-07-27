@@ -20,14 +20,14 @@ jobs:
             git config --global user.name "lnmunhoz"
 
       - run: 
-          name: "Install Lerna"
+          name: "Install base Dependencies"
           command: |
-            yarn global add lerna
+            yarn install
 
       - run:
-          name: "Install all dependencies"
+          name: "Install projects dependencies"
           command: |
-            lerna bootstrap
+            yarn install-all
       
       - run:
           name: "Check for changes on projects/node-app and build"

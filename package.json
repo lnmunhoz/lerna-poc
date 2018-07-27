@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "ci:validate": "circleci config validate -c .circleci/config.yml",
+    "install-all": "lerna bootstrap",
     "publish-all": "lerna publish --yes -m \"Publish [skip ci]\""
   },
   "author": "",
@@ -16,7 +17,7 @@
     "@commitlint/config-conventional": "^7.0.1",
     "commitizen": "^2.10.1",
     "husky": "^0.14.3",
-    "lerna": "^2.11.0"
+    "lerna": "^3.0.0-rc.0"
   },
   "publishConfig": {
     "access": "public"

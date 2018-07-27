@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/lnmunhoz/lerna-poc/compare/@lnmunhoz/node-app@1.1.3...@lnmunhoz/node-app@1.2.0) (2018-07-27)
+
+
+### Features
+
+* change message ([801f138](https://github.com/lnmunhoz/lerna-poc/commit/801f138))
+* publish attempt ([0ba4885](https://github.com/lnmunhoz/lerna-poc/commit/0ba4885))
+* update message ([eff4179](https://github.com/lnmunhoz/lerna-poc/commit/eff4179))
+
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/lnmunhoz/lerna-poc/compare/@lnmunhoz/node-app@1.1.2...@lnmunhoz/node-app@1.1.3) (2018-07-27)
 

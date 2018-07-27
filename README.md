@@ -7,3 +7,4 @@
 - https://github.com/slimm609/monorepo-gitwatcher/
 - https://www.reddit.com/r/docker/comments/7uaqx5/advice_about_cicd_with_docker_and_a_monorepo/
 - https://github.com/TehShrike/check-if-folder-contents-changed-in-git-commit-range
+- https://github.com/lerna/lerna/blob/master/FAQ.md

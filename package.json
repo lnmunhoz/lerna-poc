@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "ci:validate": "circleci config validate -c .circleci/config.yml"
+    "ci:validate": "circleci config validate -c .circleci/config.yml",
+    "publish-all": "lerna publish --yes -m \"Publish [skip ci]\""
   },
   "author": "",
   "license": "ISC",

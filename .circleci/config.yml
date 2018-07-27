@@ -18,7 +18,7 @@ jobs:
           command: |
             git config --global user.email "ln.munhoz@gmail.com"
             git config --global user.name "lnmunhoz"
-            
+
       - run: 
           name: "Install Lerna"
           command: |
@@ -40,8 +40,8 @@ jobs:
             else
               echo "No changes detected..."
             fi
-
+            cd ../../
       - run:
           name: "Publish"
           command: |
-            lerna publish --yes
+            yarn publish-all

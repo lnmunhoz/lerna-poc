@@ -25,6 +25,7 @@ jobs:
       - run:
           name: "Check for changes on projects/node-app and build"
           command: |
+            COMMIT_RANGE=$(echo $CIRCLE_COMPARE_URL | sed 's:^.*/compare/::g')
             if [[ $(git diff $COMMIT_RANGE --name-only | grep "projects/node-app") != "" ]]; then
               cd projects/node-app
               yarn build
@@ -36,4 +37,4 @@ jobs:
       - run:
           name: "Publish"
           command: |
-            lerna publish
+            lerna publish --yes

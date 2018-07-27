@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "ci:validate": "circleci config validate -c .circleci/config.yml"
   },
   "author": "",
   "license": "ISC",

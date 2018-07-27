@@ -1,4 +1,4 @@
-git rev-parse --abbrev-ref HEADversion: 2
+version: 2
 jobs:
   build:
     docker:
@@ -13,9 +13,27 @@ jobs:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
       - run: 
-          name: "Check changes folders"
+          name: "Install Lerna"
           command: |
-            for folder in `git log --format="" --name-only ${CIRCLE_COMPARE_URL##http*/} | cut -d"/" -f1 | sort -u`; do
-             echo "contents in $folder were modified"
-             #this would be a call to specific testing, etc on changed directory
-            done
+            yarn global add lerna
+
+      - run:
+          name: "Install all dependencies"
+          command: |
+            lerna bootstrap
+      
+      - run:
+          name: "Check for changes on projects/node-app and build"
+          command: |
+            if [[ $(git diff $COMMIT_RANGE --name-only | grep "projects/node-app") != "" ]]; then
+              cd projects/node-app
+              yarn build
+              yarn test
+            else
+              echo "No changes detected..."
+            fi
+
+      - run:
+          name: "Publish"
+          command: |
+            lerna publish

@@ -1,6 +1,6 @@
 {
   "name": "@lnmunhoz/app",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@lnmunhoz/common-a": "^1.1.2",
-    "@lnmunhoz/common-b": "^1.0.3"
+    "@lnmunhoz/common-a": "^1.1.3",
+    "@lnmunhoz/common-b": "^1.0.4"
   },
   "publishConfig": {
     "access": "public"

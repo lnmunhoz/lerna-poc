@@ -5,7 +5,4 @@ const commonB = require('@lnmunhoz/common-b')
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
-
-commonA()
-commonB()
 app.listen(3000, () => console.log('Example app listening on port 3000!'))

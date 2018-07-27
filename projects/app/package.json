@@ -13,5 +13,8 @@
     "@lnmunhoz/common-a": "^1.1.2",
     "@lnmunhoz/common-b": "^1.0.3"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "private": false
 }

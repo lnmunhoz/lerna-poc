@@ -12,5 +12,6 @@
   "dependencies": {
     "@lnmunhoz/common-a": "^1.1.0",
     "@lnmunhoz/common-b": "^1.0.1"
-  }
+  },
+  "private": false
 }

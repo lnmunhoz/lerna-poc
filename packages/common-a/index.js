@@ -1,1 +1,3 @@
-module.exports = () => console.log('Hello World from common-a!')
+const message = require('./message')
+
+module.exports = () => console.log(message)

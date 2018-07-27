@@ -28,6 +28,19 @@ jobs:
           name: "Install projects dependencies"
           command: |
             yarn install-all
+
+      - run:
+          name: "Check for changes on packages/common-a and build"
+          command: |
+            COMMIT_RANGE=$(echo $CIRCLE_COMPARE_URL | sed 's:^.*/compare/::g')
+            if [[ $(git diff $COMMIT_RANGE --name-only | grep "packages/common-a") != "" ]]; then
+              cd packages/common-a
+              yarn build
+              yarn test
+            else
+              echo "No changes detected..."
+            fi
+            cd ../../
       
       - run:
           name: "Check for changes on projects/node-app and build"

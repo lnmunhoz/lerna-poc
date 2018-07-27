@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "private": false
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
 }

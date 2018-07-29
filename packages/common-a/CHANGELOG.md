@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/lnmunhoz/lerna-poc/compare/@lnmunhoz/common-a@1.1.3...@lnmunhoz/common-a@1.2.0) (2018-07-29)
+
+
+### Features
+
+* add message module import ([df18d4a](https://github.com/lnmunhoz/lerna-poc/commit/df18d4a))
+
+
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/lnmunhoz/lerna-poc/compare/@lnmunhoz/common-a@1.1.2...@lnmunhoz/common-a@1.1.3) (2018-07-27)
 

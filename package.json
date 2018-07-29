@@ -8,7 +8,7 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "ci:validate": "circleci config validate -c .circleci/config.yml",
     "install-all": "lerna bootstrap",
-    "publish-all": "lerna publish --yes -m \"Publish [skip ci]\""
+    "publish-all": "lerna publish --registry \"//registry.npmjs.org/:_authToken=$NPM_TOKEN\" --yes -m \"Publish [skip ci]\""
   },
   "author": "",
   "license": "ISC",

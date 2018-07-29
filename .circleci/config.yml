@@ -12,7 +12,10 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-
+      - run:
+          name: Setup npm
+          command: |
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run: 
           name: "Configuring git"
           command: |
@@ -35,7 +38,6 @@ jobs:
             COMMIT_RANGE=$(echo $CIRCLE_COMPARE_URL | sed 's:^.*/compare/::g')
             if [[ $(git diff $COMMIT_RANGE --name-only | grep "packages/common-a") != "" ]]; then
               cd packages/common-a
-              yarn build
               yarn test
             else
               echo "No changes detected..."

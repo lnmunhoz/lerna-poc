@@ -1,6 +1,6 @@
 {
   "name": "@lnmunhoz/node-app",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "@lnmunhoz/common-a": "^1.2.0",
+    "@lnmunhoz/common-a": "^1.2.1",
     "@lnmunhoz/common-b": "^1.0.4",
     "express": "^4.16.3"
   },

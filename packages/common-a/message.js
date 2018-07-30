@@ -1,1 +1,1 @@
-module.exports = 'Hello from module-a'
+module.exports = 'Hello from module-a!'
